@@ -1,57 +1,85 @@
-body{  font-family: "Poppins", sans-serif;
-    transition: all 0.5s ease;
-
-}
-
 :root {
     --branding-color: #6c63ff;
-    --secondary-color: #f9f7fe;
-    --heading-font-family: "Playfair Display", serif;
     --default-font-family: "Poppins", sans-serif;
-}
-.hero {
-    background: var(--secondary-color);
-    padding: 160px 20px;
+    --heading-font-family: "Playfair Display", serif;
+    --secondary-color: #f9f7fe;
 }
 
-.hero img{
-margin-left: 40%;
-max-width: 40%;
-border-radius: 8%;
-filter: grayscale(80%);
-
-
+body {
+    font-family: var(--default-font-family);
+    transition: all 1s ease;
 }
-.hero img:hover{
-    filter: none;
-    cursor: pointer;
+
+h1,
+h3,
+h4,
+h5,
+h6 {
+    color: black;
+    font-family: var(--heading-font-family);
+    font-weight: 600;
 }
 
 h1 {
     font-size: 96px;
 }
 
-
-h1, h3, h4, h5, h6 {
-    color: black;
-    font-family: var(--heading-font-family);
-    font-weight:600;
-}
-h2{
- font-weight: 300;
- font-size:large;
+h2 {
+    font-size: large;
+    font-weight: 300;
 }
 
 .btn-cv {
-    border-radius: 30px;
-    color: rgb(4, 0, 212);
-    font-weight: 600;
-    border: 1px solid var(--branding-color);
-    display: flex;
     align-self: flex-start;
+    border: 1px solid var(--branding-color);
+    border-radius: 30px;
+    color: var(--branding-color);
+    display: flex;
+    font-weight: 600;
     overflow: hidden;
+    width: fit-content;
+    height: fit-content;
 }
 
-.btn-cv:hover{
-     cursor: pointer;
+.btn-cv:hover , .btn-cv:hover .btn-icon  {
+    cursor: pointer;
+    background-color: var(--branding-color);
+    transition: all 0.4s ease-in-out;
+
 }
+
+.btn-cv:hover .btn-text {
+    color: var(--secondary-color); /* Change the text color to white when hovering */
+}
+
+.btn-icon {
+    border: 5px solid var(--branding-color)  ;
+    color: var(--secondary-color);
+    background-color: var(--branding-color);
+    padding: 10px 15px;
+}
+
+.btn-text {
+    color: var(--branding-color);
+    padding: 0px 15px;
+
+}
+
+
+.hero {
+    background: var(--secondary-color);
+    padding: 160px 20px;
+}
+
+.hero img {
+    border-radius: 8%;
+    filter: grayscale(70%);
+    margin-left: 40%;
+    max-width: 45%;
+}
+
+.hero img:hover {
+    cursor: pointer;
+    filter: none;
+}
+
