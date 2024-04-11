@@ -1,8 +1,8 @@
 :root {
-    --branding-color: #6c63ff;
+    --branding-color: #487058;
+    --secondary-color: #f9f7fe;
     --default-font-family: "Poppins", sans-serif;
     --heading-font-family: "Playfair Display", serif;
-    --secondary-color: #f9f7fe;
 }
 
 body {
@@ -41,19 +41,19 @@ h2 {
     height: fit-content;
 }
 
-.btn-cv:hover , .btn-cv:hover .btn-icon  {
+.btn-cv:hover,
+.btn-cv:hover .btn-icon {
     cursor: pointer;
     background-color: var(--branding-color);
     transition: all 0.4s ease-in-out;
-
 }
 
 .btn-cv:hover .btn-text {
-    color: var(--secondary-color); /* Change the text color to white when hovering */
+    color: var(--secondary-color);
 }
 
 .btn-icon {
-    border: 5px solid var(--branding-color)  ;
+    border: 5px solid var(--branding-color);
     color: var(--secondary-color);
     background-color: var(--branding-color);
     padding: 10px 15px;
@@ -62,20 +62,19 @@ h2 {
 .btn-text {
     color: var(--branding-color);
     padding: 0px 15px;
-
 }
-
 
 .hero {
     background: var(--secondary-color);
-    padding: 160px 20px;
+    height: auto;
 }
 
 .hero img {
-    border-radius: 8%;
+    border-radius: 6%;
     filter: grayscale(70%);
-    margin-left: 40%;
-    max-width: 45%;
+    margin-left: 30%;
+    max-width: 50%;
+    border: 0.5px solid var(--secondary-color);
 }
 
 .hero img:hover {
@@ -83,20 +82,20 @@ h2 {
     filter: none;
 }
 
-
 .left-page {
     position: relative;
     z-index: 1;
+    padding: 160px 10px;
 }
-.left-page {
-    position: relative;
-    z-index: 1; /* Set z-index higher than hero portion */
+
+.right-page {
+    padding: 160px 10px;
 }
 
 .h-shape {
     content: "";
     position: absolute;
-    width: 60%; /* Adjust width as needed */
+    width: 65%; /* Adjust width as needed */
     height: 100%; /* Adjust height as needed */
     line-height: 100%;
     background-color: #82a38f;
@@ -105,12 +104,47 @@ h2 {
     top: 0;
     clip-path: polygon(0 0, 46% 0, 79% 100%, 0% 100%);
     transition: clip-path 0.5s ease-in-out;
-   
+}
+.img-sm{
+    display: none;
+}
+@media (max-width: 800px) {
+    .hero {
+        align-items: center; /* Center align items */
+        padding: 10px auto;
+    }
+
+    .left-page {
+        display: none;/* Remove bottom padding for small screens */
+    }
+
+    .right-page{
+        padding: 60px auto 20px auto;
+        justify-content: space-around;
+        font-size: smaller;
+        width: 100%;
+    }
+    .btn-cv{
+        display: block;
+        margin: auto 0;
+    }
+    .right-page h2 ,   .right-page h1 ,.btn-cv {
+        text-align: center; /* Center-align h2 elements */
+    }
+    .right-page h1{
+        font-size: 2.5rem;
+    }
+
+  .img-sm{
+    display: block;
+    margin: 5px  ;
+    width: 70%;
+    text-align: center;
+    padding: 5px 5px 20px 5px;
 }
 
 
-
-
+}
 
 /*.h-shape:hover {
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
