@@ -83,3 +83,36 @@ h2 {
     filter: none;
 }
 
+
+.left-page {
+    position: relative;
+    z-index: 1;
+}
+.left-page {
+    position: relative;
+    z-index: 1; /* Set z-index higher than hero portion */
+}
+
+.h-shape {
+    content: "";
+    position: absolute;
+    width: 60%; /* Adjust width as needed */
+    height: 100%; /* Adjust height as needed */
+    line-height: 100%;
+    background-color: #82a38f;
+    z-index: -1; /* Send the element behind */
+    left: 0;
+    top: 0;
+    clip-path: polygon(0 0, 46% 0, 79% 100%, 0% 100%);
+    transition: clip-path 0.5s ease-in-out;
+   
+}
+
+
+
+
+
+/*.h-shape:hover {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+}/*
+
