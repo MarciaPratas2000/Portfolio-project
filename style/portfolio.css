@@ -4,12 +4,10 @@
     --default-font-family: "Poppins", sans-serif;
     --heading-font-family: "Playfair Display", serif;
 }
-
 body {
     font-family: var(--default-font-family);
     transition: all 1s ease;
 }
-
 h1,
 h3,
 h4,
@@ -19,16 +17,13 @@ h6 {
     font-family: var(--heading-font-family);
     font-weight: 600;
 }
-
 h1 {
     font-size: 96px;
 }
-
 h2 {
     font-size: large;
     font-weight: 300;
 }
-
 .btn-cv {
     align-self: flex-start;
     border: 1px solid var(--branding-color);
@@ -40,35 +35,29 @@ h2 {
     width: fit-content;
     height: fit-content;
 }
-
 .btn-cv:hover,
 .btn-cv:hover .btn-icon {
     cursor: pointer;
     background-color: var(--branding-color);
     transition: all 0.4s ease-in-out;
 }
-
 .btn-cv:hover .btn-text {
     color: var(--secondary-color);
 }
-
 .btn-icon {
     border: 5px solid var(--branding-color);
     color: var(--secondary-color);
     background-color: var(--branding-color);
     padding: 10px 15px;
 }
-
 .btn-text {
     color: var(--branding-color);
     padding: 0px 15px;
 }
-
 .hero {
     background: var(--secondary-color);
     height: auto;
 }
-
 .hero img {
     border-radius: 6%;
     filter: grayscale(70%);
@@ -76,28 +65,27 @@ h2 {
     max-width: 50%;
     border: 0.5px solid var(--secondary-color);
 }
-
 .hero img:hover {
     cursor: pointer;
     filter: none;
 }
-
 .left-page {
     position: relative;
     z-index: 1;
-    padding: 160px 10px;
+    padding: 170px 10px;
+    height: 100%;
+    margin: 0;
 }
-
 .right-page {
-    padding: 160px 10px;
-}
+    padding: 75px 10px;
 
+}
 .h-shape {
     content: "";
     position: absolute;
     width: 65%; /* Adjust width as needed */
     height: 100%; /* Adjust height as needed */
-    line-height: 100%;
+    line-height:0;
     background-color: #82a38f;
     z-index: -1; /* Send the element behind */
     left: 0;
@@ -110,14 +98,19 @@ h2 {
 }
 @media (max-width: 800px) {
     .hero {
+        align-items: center; /* Center align items */
+        padding: 10px auto;
         text-align: center;  
     }
 
     .left-page {
+        display: none;/* Remove bottom padding for small screens */
         display: none;/* Remove  for small screens */
     }
 
     .right-page{
+        padding: 60px auto 20px auto;
+        justify-content: space-around;
         padding: 40px 15px 10px 15px;
         justify-content: center;
         font-size: smaller;
@@ -126,6 +119,10 @@ h2 {
     }
     .btn-cv{
         display: block;
+        margin: auto 0;
+    }
+    .right-page h2 ,   .right-page h1 ,.btn-cv {
+        text-align: center; /* Center-align h2 elements */
         margin: 20px auto auto auto;
 
     }
@@ -133,6 +130,14 @@ h2 {
     .right-page h1{
         font-size: 2.5rem;
     }
+
+  .img-sm{
+    display: block;
+    margin: 5px  ;
+    width: 70%;
+    text-align: center;
+    padding: 5px 5px 20px 5px;
+}
 
     .right-page h2{
         font-size: 1.1rem;
@@ -149,6 +154,9 @@ h2 {
         width: 60%; /* Adjust width for smaller screens */
     }
 }
+
 /*.h-shape:hover {
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+}/*
+
 }/*
