@@ -167,9 +167,7 @@ body {
     object-fit: cover; /* Maintain aspect ratio and fill the container */
   }
 
-  .pop-out-circle {
-
-  }
+  
 @media (max-width: 800px) {
     .btn-branding-outline {
         margin: 0px 5px 30px 5px;
@@ -216,11 +214,11 @@ body {
         height: 100%;
     }
 
-    .right-page h1 {
+    .right-page h1 , .about-section h1 {
         font-size: 2.5rem;
-    }
+line-height: normal;    }
 
-    .right-page h2 {
+    .right-page h2 , .about-section h2{
         font-size: 1.1rem;
     }
 
@@ -231,10 +229,16 @@ body {
         text-align: center;
     }
 
-    .hero img {
+    .hero img , .about-section .about-image-container {
         display: block;
         margin: 0 auto;
         text-align: center;
         width: 60%;
     }
+    .about-section {
+        text-align: center;
+        justify-content: center;
+        padding: 0;
+    }
+
 }
