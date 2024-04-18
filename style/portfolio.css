@@ -42,6 +42,7 @@ body {
     background-color: var(--branding-color);
     cursor: pointer;
     transition: all 0.4s ease-in-out;
+    color: var(--secondary-color);
 }
 
 .btn-cv:hover .btn-text {
@@ -131,7 +132,44 @@ body {
     padding: 75px 10px;
 }
 
+.about-section {
+    padding: 160px 20px;
+}
+.about-section-content {
+    margin: 30px;
+}
 
+.about-section h1 {
+    font-size: 64px;
+    line-height: 80px;
+}
+.about-section h2 {
+    font-size: 18px;
+    font-family: var(--default-font-family);
+}
+.about-image-container {
+    width: 70%;
+     height: auto;
+     margin: 0 auto;
+     display: block;
+    overflow: hidden; /* Ensure image stays within container */
+    border-radius: 50%; /* Makes the container and image round */
+    background-color: var(--secondary-color);
+
+  }
+  
+  .about-image-container img {
+    border: var(--secondary-color);
+    z-index: 2; /* Make sure the circle is behind the image */
+    border-radius: 50%; /* Makes the container and image round */
+    width: 100%; /* Ensure the image fills the container */
+    height: 100%; /* Ensure the image fills the container */
+    object-fit: cover; /* Maintain aspect ratio and fill the container */
+  }
+
+  .pop-out-circle {
+
+  }
 @media (max-width: 800px) {
     .btn-branding-outline {
         margin: 0px 5px 30px 5px;
