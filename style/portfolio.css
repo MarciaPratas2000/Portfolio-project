@@ -170,14 +170,11 @@ body {
     height: 100%; /* Ensure the image fills the container */
     object-fit: cover; /* Maintain aspect ratio and fill the container */
   }
-  .skills-background{
+.skills-background{
     background-color: var(--secondary-color);
-    margin: 0;
-    padding: 0;
-    
 }
-  .self-skills {
-    margin: 0 20px  ;
+ .self-skills {
+    margin: 0 35px  ;
     padding: 70px 20px;
     font-family: var(--default-font-family);
     color: #487058;
