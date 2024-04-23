@@ -64,12 +64,11 @@ body {
 .container img {
     border: 3px solid var(--secondary-color);
     border-radius: 6px;
-    height: 60vh;
     padding: 10px;
-    width: 400px;
-
 }
-.container-section .certificates img{
+
+
+.container-section  img{
     padding: 8px;
     width: 500px;
 }
@@ -173,27 +172,24 @@ body {
   }
 
   
-@media (max-width: 800px) {
+  @media(max-width: 800px) {
+    
     .btn-branding-outline {
         margin: 0px 5px 30px 5px;
         padding: 10px 20px;
     }
-
     .container {
         text-align: center;
     }
-
     .container h2 {
         font-size: 30px;
         line-height: 1;
     }
-
     .hero {
         align-items: center;
         padding: 10px auto;
         text-align: center;
     }
-
     .img-sm {
         display: block;
         margin: 5px;
@@ -201,16 +197,13 @@ body {
         text-align: center;
         width: 70%;
     }
-
     .left-page {
         display: none;
     }
-
     .mb-5 {
         margin-bottom: 1.5rem !important;
         padding: 0;
     }
-
     .right-page {
         justify-content: center;
         font-size: smaller;
@@ -218,22 +211,18 @@ body {
         width: 100%;
         height: 100%;
     }
-
     .right-page h1 , .container-section h1 {
         font-size: 2.5rem;
 line-height: normal;    }
-
     .right-page h2 , .container-section h2{
         font-size: 1.1rem;
     }
-
     .right-page h1,
     .right-page h2,
     .btn-cv {
         margin: 20px auto auto auto;
         text-align: center;
     }
-
     .hero img , .about-image-container {
         display: block;
         margin: 0 auto;
@@ -244,7 +233,23 @@ line-height: normal;    }
     .container-section, .about-image-container img {
         text-align: center;
         justify-content: center;
-        padding: 0;
-    }
+        padding: 0;}
 
-}
+    .content img{
+    max-width: 100%; /* Ensure images don't overflow their containers */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Ensure proper rendering in all browsers */
+    }
+    
+  }
+  /* For iPad models in portrait mode */
+@media(min-width: 768px){
+    .projects{
+        height: fit-content;
+
+    }
+    .projects img {
+        height: 70%;
+    }
+  }
+  
