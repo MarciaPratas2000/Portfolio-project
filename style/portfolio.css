@@ -69,7 +69,10 @@ body {
     width: 400px;
 
 }
-
+.container-section .certificates img{
+    padding: 8px;
+    width: 500px;
+}
 .container h2 {
     font-family: var(--heading-font-family);
     font-size: 44px;
