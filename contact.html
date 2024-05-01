@@ -59,17 +59,22 @@
         <div class="TextBlock">
             <form style="display:block;" id="Form">
                 <p>First Name: *<br>
-                    <input class="formInputField" type="text" id="firstname" value="">
+                    <input class="formInputField" type="text" id="firstname"  required value="">
                     <br><br>
                     Last Name: *<br>
-                    <input class="formInputField" type="text" id="lastname" value="">
+                    <input class="formInputField" type="text" id="lastname" required value="">
                     <br><br>
                     Email: *<br>
-                    <input class="formInputField" type="text" id="email" value="">
+                    <input class="formInputField" type="text" id="email" required value="">
+                    <br>
+                    <br>
+                    <label for="subject">Subject:</label><br>
+        <input type="text" id="subject" name="subject" id="subject"  required><br>
                     <br>
                     Message:<br>
                     <textarea class="formInputArea" id="message" cols="40" rows="5"></textarea>
                 </p>
+                
                 <p id="ErrorMessage" style="color:#FF0004; display:none;"><strong>Error: Please fill in all the required fields indicated by an asterisk.</strong></p>
                 
                 <!-- Display while message is being sent -->
