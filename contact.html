@@ -1,73 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>SheCodes Portfolio : Contact</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SheCodes Portfolio : Contact</title>
 
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" />
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@500;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="style/portfolio.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous" />
+    <link rel="stylesheet" href="style/portfolio.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@500;700&display=swap" rel="stylesheet" />
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
-  <script src="https://kit.fontawesome.com/ddc3ee268a.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/ddc3ee268a.js" crossorigin="anonymous"></script>
 </head>
 <body>
-  <nav class="navbar navbar-expand-lg navbar-light bg-light  bg-light border-bottom border-secondary-subtle">
-    <div class="container-fluid mt-3 mb-2 d-sm-flex justify-content-between">
-      <div class=" fs-4 ms-4 fw-medium branding-color"> Menu</div>
-      <div>
-      <a class="navbar-brand" href="\"></a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom border-secondary-subtle">
+        <div class="container-fluid mt-3 mb-2 d-sm-flex justify-content-between">
+            <div class="fs-4 ms-4 fw-medium branding-color">Menu</div>
+            <a class="navbar-brand" href="/"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse d-lg-flex justify-content-between" id="navbarNav">
+                <div class="d-none d-lg-block"></div>
+                <ul class="navbar-nav ms-4">
+                    <li class="nav-item me-md-2">
+                        <a class="nav-link fw-light" href="/">Home</a>
+                    </li>
+                    <li class="nav-item me-md-2">
+                        <a class="nav-link fw-light" href="/about.html">About me</a>
+                    </li>
+                    <li class="nav-item me-md-2">
+                        <a class="nav-link fw-light" href="/work.html">My Projects</a>
+                    </li>
+                    <li class="nav-item me-md-2">
+                        <a class="nav-link fw-light" href="/certificates.html">My Certificates</a>
+                    </li>
+                    <li class="nav-item me-md-2">
+                        <a class="nav-link fw-light active" href="/contact.html">Contact me</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="TextBlock">
+            <br>
+            <div>
+                <a href="mailto:marcia.pratas.2000@gmail.com">Send me an email</a>
+            </div>
+            <div class="heading_text">Contact Me</div>
+            <hr>
+            <p>Please use the contact form below to contact me if you have questions or would like a copy of my CV. I will try to reply within 3 days.</p>
+        </div>
+
+        <div class="TextBlock">
+            <form style="display:block;" id="Form">
+                <p>First Name: *<br>
+                    <input class="formInputField" type="text" id="firstname" value="">
+                    <br><br>
+                    Last Name: *<br>
+                    <input class="formInputField" type="text" id="lastname" value="">
+                    <br><br>
+                    Email: *<br>
+                    <input class="formInputField" type="text" id="email" value="">
+                    <br>
+                    Message:<br>
+                    <textarea class="formInputArea" id="message" cols="40" rows="5"></textarea>
+                </p>
+                <p id="ErrorMessage" style="color:#FF0004; display:none;"><strong>Error: Please fill in all the required fields indicated by an asterisk.</strong></p>
+                
+                <!-- Display while message is being sent -->
+                <div style="display:none;" id="Sending">
+                    <p>Sending.... This should take no longer than 5 seconds. Please do not leave or refresh the page.</p>
+                </div>
+
+                <!-- Display when message is successfully sent -->
+                <div style="display:none;" id="Received">
+                    <p>Message received. Thank you.</p>
+                </div>
+                
+                <button class="projButton" type="submit" onclick="submitForm()">Submit</button>
+            </form>
+
+            <!-- Display when message fails to send -->
+            <div style="display:none;" id="FormError">
+                <p>The form failed to send. Please try again later.</p>
+            </div>
+        </div>
     </div>
 
-      <div class="collapse navbar-collapse d-lg-flex justify-content-between  " id="navbarNav">
-        <div class=" d-none d-lg-block"></div>
-        <ul class="navbar-nav ms-4 ">
-          <li class="nav-item  me-md-2 ">
-            <a class="nav-link fw-light "  href="/">Home</a>
-          </li>
-          <li class="nav-item me-md-2 ">
-            <a class="nav-link  fw-light " href="/about.html">About me</a>
-          </li>
-          <li class="nav-item me-md-2 ">
-            <a class="nav-link fw-light " href="/work.html">My Projects</a>
-          </li>
-          <li class="nav-item me-md-2  ">
-            <a class="nav-link fw-light " href="/certificates.html">My Certificates</a>
-          </li>
-          <li class="nav-item me-md-2 ">
-            <a class="nav-link fw-light active " href="/contact.html" > Contact me</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-
-<div class="container-section container">
-    <div class="content">
-      <h1 class="mb-5">Let's get in touch!</h1>
-      <h3>Email</h3>
-      <p>
-        <a href="mailto:team@shecodes.io">Send us an email</a>
-      </p>
-      <h3>Twitter</h3>
-      <p>
-        <a href="https://www.twitter.com/" target="_blank">
-          @marcia
-        </a>
-      </p>
-      <h3>Instagram</h3>
-      <p>
-        <a href="https://www.instagram.com/.codes" target="_blank">
-          @marcia.codes
-        </a>
-      </p>
-    </div>
-  </div>
-<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+    <script src="app.js"></script>
 </body>
+</html>
+
