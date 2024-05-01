@@ -61,14 +61,14 @@ body {
     background-color: var(--branding-color);
     border: 5px solid var(--branding-color);
     color: var(--secondary-color);
-    padding: 15px 20px;
+    padding: 10px 15px;
 
 }
 
 .btn-text {
     color: var(--branding-color);
-    padding: 0 20px;
-    font-size: 20px;
+    padding: 0 15px;
+    font-size: 15px;
 }
 
 .container img {
@@ -84,7 +84,7 @@ body {
 }
 .container h2 {
     font-family: var(--heading-font-family);
-    font-size: 44px;
+    font-size: 40px;
     font-weight: bold;
 }
 
@@ -95,11 +95,11 @@ body {
 }
 
 .hero h1 {
-    font-size: 90px;
+    font-size: 80px;
 }
 
 .hero h2 {
-    font-size: 25px;
+    font-size: 20px;
 }
 
 .hero img {
@@ -155,7 +155,7 @@ body {
 }
 
 .container-section h1 , .self-skills h1{
-    font-size: 64px;
+    font-size: 60px;
     line-height: 80px;
     font-family: var(--heading-font-family);
 }
@@ -191,9 +191,6 @@ body {
    font-family: var(--default-font-family);
     color: #487058;
     margin: 8px auto;
-
-
-
 }
 
 .each-skill {
