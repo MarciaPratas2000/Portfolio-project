@@ -45,56 +45,55 @@
         </div>
     </nav>
 
-    <div class="container">
+    <div class="container conatiner-section">
         <div class="TextBlock">
-            <br>
-    
-            <div class="heading_text">Contact Me</div>
+            <div class="mt-5 ">Contact Me</div>
             <hr>
             <p>Please use the contact form below to contact me if you have questions or would like a copy of my CV. I will try to reply within 3 days.</p>
         </div>
 
         <div class="TextBlock">
-            <form style="display:block;" id="Form">
-                <p>First Name: *<br>
-                    <input class="formInputField" type="text" id="firstname"  required value="">
-                    <br><br>
-                    Last Name: *<br>
-                    <input class="formInputField" type="text" id="lastname" required value="">
-                    <br><br>
-                    Email: *<br>
-                    <input class="formInputField" type="text" id="email" required value="">
-                    <br>
-                    <br>
-                    <label for="subject">Subject:</label><br>
-        <input type="text" id="subject" name="subject" id="subject"  required><br>
-                    <br>
-                    Message:<br>
+            <form id="Form">
+                <div class="mb-3">
+                    <label for="firstname">First Name: *</label><br>
+                    <input class="formInputField" type="text" id="firstname" required>
+                </div>
+                <div class="mb-3">
+                    <label for="lastname">Last Name: *</label><br>
+                    <input class="formInputField" type="text" id="lastname" required>
+                </div>
+                <div class="mb-3">
+                    <label for="email">Email: *</label><br>
+                    <input class="formInputField" type="email" id="email" required>
+                </div>
+                <div class="mb-3">
+                    <label for="subject">Subject:</label> <br>
+                    <input class="formInputField" type="text" id="subject" required>
+                </div>
+                <div class="mb-3">
+                    <label for="message">Message:</label> <br>
                     <textarea class="formInputArea" id="message" cols="40" rows="5"></textarea>
-                </p>
+                </div>
+            
                 
-                <p id="ErrorMessage" style="color:#FF0004; display:none;"><strong>Error: Please fill in all the required fields indicated by an asterisk.</strong></p>
-                
-                <!-- Display while message is being sent -->
-                <div style="display:none;" id="Sending">
-                    <p>Sending.... This should take no longer than 5 seconds. Please do not leave or refresh the page.</p>
+                <div  id="Sending"> 
+                    <p>Sending.... .</p>
                 </div>
 
-                <!-- Display when message is successfully sent -->
-                <div style="display:none;" id="Received">
-                    <p>Message received. Thank you.</p>
+                <div  id="Received">
+                    <p>Form received. Thank you.</p>
                 </div>
                 
-                <button class="projButton" type="submit" onclick="submitForm()">Submit</button>
+                <button class="btn btn-branding-outline" type="submit" onclick="submitForm()">Submit</button>
             </form>
 
-            <!-- Display when message fails to send -->
-            <div style="display:none;" id="FormError">
+            <div  id="FormError">
                 <p>The form failed to send. Please try again later.</p>
             </div>
         </div>
     </div>
 
+    <!-- JavaScript for form submission -->
     <script src="app.js"></script>
 </body>
 </html>
