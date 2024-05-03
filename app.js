@@ -1,5 +1,4 @@
 
-
 function submitForm() {
     const form = document.getElementById('Form');
     const sendingMessage = document.getElementById('Sending');
@@ -57,5 +56,7 @@ document.addEventListener('DOMContentLoaded', function() {
     
     submitForm();
 });
+
+document.getElementById("currentYear").textContent = new Date().getFullYear();
 
 

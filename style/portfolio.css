@@ -18,6 +18,21 @@ body {
     color:var(--branding-color);
        }
 
+.btn-branding {
+background: var(--branding-color);
+border-radius: 4px;
+color: white;
+font-size: 18px;
+line-height: 27px;
+padding: 15px 30px;
+}
+
+.btn-branding:hover{
+border: 1px solid var(--branding-color);
+background: var(--secondary-color) ;
+color:var(--branding-color);
+}
+
 .btn-branding-outline {
     border: 1px solid var(--branding-color);
     border-radius: 4px;
@@ -184,7 +199,7 @@ body {
   }
   .skills-background{
     background-color: var(--secondary-color);
-    padding: 10px 50px; /* Adjust the horizontal padding as needed */
+    padding: auto;
 }
 
  .self-skills {
@@ -204,7 +219,31 @@ body {
     margin-right: 13px;
     margin-bottom: 13px;
 }
-  
+
+footer h1{
+    font-family: var(--heading-font-family);
+    font-weight: 600;
+}
+footer .contact-box {
+    background: var(--secondary-color);
+    padding: 30px 120px;
+    border-radius: 10px;
+}
+
+footer .social-links a {
+    margin: 0 20px;
+    color: var(--secondary-color);
+    background: var(--branding-color);
+    padding: 10px 15px;
+    border-radius: 50%;
+    font-size: 18px;
+}
+
+footer .social-links a:hover{
+    color: var(--branding-color);
+    background: var(--secondary-color);
+    border: 1px solid var(--branding-color);
+}
   
   @media(max-width: 800px) {
     
@@ -253,7 +292,7 @@ line-height: normal;    }
     }
     .right-page h1,
     .right-page h2,
-    .btn-cv {
+    .btn-cv , .btn-branding{
         margin: 20px auto auto auto;
         text-align: center;
     }
@@ -273,6 +312,12 @@ line-height: normal;    }
     max-width: 100%; /* Ensure images don't overflow their containers */
     height: auto; /* Maintain aspect ratio */
     display: block; /* Ensure proper rendering in all browsers */
+    }
+    footer .social-links a {
+        margin: 0 20px;
+        padding: 5px 10px;
+        border-radius: 50%;
+        font-size: 10px;
     }
   
   }

@@ -49,7 +49,7 @@
         <div class="TextBlock">
             <div class="mt-5 ">Contact Me</div>
             <hr>
-            <p>Please use the contact form below to contact me if you have questions or would like a copy of my CV. I will try to reply within 3 days.</p>
+            <p class="text-muted">Please use the contact form below to contact me if you have questions or would like a copy of my CV. I will try to reply within 3 days.</p>
         </div>
 
         <div class="TextBlock">
@@ -67,7 +67,7 @@
                     <input class="formInputField" type="email" id="email" required>
                 </div>
                 <div class="mb-3">
-                    <label for="subject">Subject:</label> <br>
+                    <label for="subject">Subject: *</label> <br>
                     <input class="formInputField" type="text" id="subject" required>
                 </div>
                 <div class="mb-3">
@@ -84,7 +84,7 @@
                     <p>Form received. Thank you.</p>
                 </div>
                 
-                <button class="btn btn-branding-outline mb-4" type="submit" onclick="submitForm()">Submit</button>
+                <button class="btn btn-branding mb-4" type="submit" onclick="submitForm()">Submit</button>
             </form>
 
             <div  id="FormError">
@@ -92,8 +92,19 @@
             </div>
         </div>
     </div>
-
-    <!-- JavaScript for form submission -->
+    <footer>
+    <div class="social-links d-flex justify-content-center mb-3">
+        <a href="https://github.com/MarciaPratas2000" target="_blank">
+          <i class="fab fa-github"></i>
+        </a>
+        <a href="www.linkedin.com/in/márcia-pratas-4bb0042a4" target="_blank">
+          <i class="fab fa-linkedin"></i>
+        </a>
+      </div>
+      <p class="d-flex justify-content-center">&copy; Márcia Pratas | <span id="currentYear"></span></p>
+</div> 
+</footer>
+   <!-- JavaScript for form submission -->
     <script src="app.js"></script>
 </body>
 </html>
