@@ -1,13 +1,14 @@
+document.getElementById("currentYear").textContent = new Date().getFullYear();
+
+const form = document.getElementById('Form');
+const sendingMessage = document.getElementById('Sending');
+const receivedMessage = document.getElementById('Received');
+const errorMessage = document.getElementById('FormError');
+sendingMessage.style.display = 'none';
+receivedMessage.style.display = 'none';
+errorMessage.style.display = 'none';
 
 function submitForm() {
-    const form = document.getElementById('Form');
-    const sendingMessage = document.getElementById('Sending');
-    const receivedMessage = document.getElementById('Received');
-    const errorMessage = document.getElementById('FormError');
-    sendingMessage.style.display = 'none';
-    receivedMessage.style.display = 'none';
-    errorMessage.style.display = 'none';
-
 
     form.addEventListener('submit', async function(event) {
         event.preventDefault(); // Prevent default form submission
@@ -39,7 +40,7 @@ function submitForm() {
                 form.reset(); // Reset form fields after successful submission
             } else {
                 // Handle case where opening the mailto link failed
-                throw new Error('Failed to open email client.');
+                form.reset();
             }
         } catch (error) {
             // Display error message to the user
@@ -53,10 +54,8 @@ function submitForm() {
 }
 
 document.addEventListener('DOMContentLoaded', function() {
-    
     submitForm();
 });
 
-document.getElementById("currentYear").textContent = new Date().getFullYear();
 
 
