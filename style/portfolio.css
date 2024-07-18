@@ -181,13 +181,15 @@ color:var(--branding-color);
 
 
 .about-image-container {
-    width: 60%;
+    width: 40%;
      height: auto;
      margin: 0 auto;
      display: block;
     overflow: hidden; /* Ensure image stays within container */
     border-radius: 50%; /* Makes the container and image round */
     background-color: var(--secondary-color);
+    opacity: 95%;
+
 
   }
   
@@ -247,6 +249,24 @@ footer .social-links a:hover{
     border: 1px solid var(--branding-color);
 }
   
+.bg-soft-skills{
+padding:  12px 20px;
+background-color: rgb(247, 247, 192);
+text-align:center;
+border-radius: 10px;
+font-weight: bold;
+font-size: large;
+opacity: 85%;
+}
+
+.Typewriter__cursor {
+    display: none;
+  }
+
+.cursor-visible .Typewriter__cursor {
+    display: inline-block;
+  }
+
   @media(max-width: 800px) {
     .hero {
         align-items: center;
@@ -257,7 +277,7 @@ footer .social-links a:hover{
         display: block;
         margin: 0 auto;
         text-align: center;
-        width: 60%;
+        width: 20%;
         height: auto;
     }
     .left-page {
