@@ -17,10 +17,10 @@ var typewriter = new Typewriter(softSkills, {
 // Loop through skills and add them to the typewriter
 skills.forEach((skill, index) => {
   if (index < skills.length - 1) {
-    typewriter.typeString(`<div class="bg-soft-skills">${skill}</div><p></p>`)
+    typewriter.typeString(`<div class="alert alert-warning text-center">${skill}</div><p></p>`)
               .pauseFor(300);
   } else {
-    typewriter.typeString(`<div class="bg-soft-skills cursor-visible">${skill}</div>`)
+    typewriter.typeString(`<div class="alert alert-warning  text-center cursor-visible">${skill}</div>`)
               .pauseFor(300);
   }
 });

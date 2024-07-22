@@ -146,7 +146,7 @@ color:var(--branding-color);
     color: var(--branding-color);
 }
 
-.container img {
+.container img , .container video{
     border: 3px solid var(--secondary-color);
     border-radius: 6px;
     padding: 10px;
@@ -158,9 +158,10 @@ color:var(--branding-color);
     font-weight: bold;
 }
 
-.container-section  img{
+.container-section  img , .container-section  video{
     padding: 8px;
     width: 500px;
+
 }
 .container-section {
     padding: 60px 20px;
@@ -248,15 +249,33 @@ footer .social-links a:hover{
     background: var(--secondary-color);
     border: 1px solid var(--branding-color);
 }
-  
-.bg-soft-skills{
-padding:  12px 20px;
-background-color: rgb(247, 247, 192);
-text-align:center;
-border-radius: 10px;
-font-weight: bold;
-font-size: large;
-opacity: 85%;
+
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: green; /* Adjust color as needed */
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    width: 50px; /* Make controls larger */
+    height: 50px;
+    background-color: green; /* Adjust color as needed */
+    border-radius: 50%;
+    line-height: 50px;
+    text-align: center;
+    color: white;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    width: 24px; /* Adjust icon size as needed */
+    height: 24px;
+}
+
+.carousel-control-prev-icon::before,
+.carousel-control-next-icon::before {
+    font-size: 24px; /* Adjust icon size as needed */
 }
 
 .Typewriter__cursor {
@@ -266,6 +285,7 @@ opacity: 85%;
 .cursor-visible .Typewriter__cursor {
     display: inline-block;
   }
+
 
   @media(max-width: 800px) {
     .hero {
@@ -334,7 +354,7 @@ opacity: 85%;
         justify-content: center;
         padding: 0;}
 
-    .content img{
+    .content img , .content video{
     max-width: 100%; /* Ensure images don't overflow their containers */
     height: auto; /* Maintain aspect ratio */
     display: block; /* Ensure proper rendering in all browsers */
@@ -355,7 +375,7 @@ opacity: 85%;
         height: fit-content;
 
     }
-    .projects img {
+    .projects img , .projects video {
         height: 70%;
     }
     .projects h3{
