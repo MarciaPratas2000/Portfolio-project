@@ -250,33 +250,61 @@ footer .social-links a:hover{
     border: 1px solid var(--branding-color);
 }
 
-
-.carousel-control-prev-icon,
-.carousel-control-next-icon {
-    background-color: green; /* Adjust color as needed */
+/* Carousel container */
+.carousel {
+    position: relative;
+}
+/* Carousel video */
+.carousel-item video {
+    height: 500px;
 }
 
+/* Carousel controls */
 .carousel-control-prev,
 .carousel-control-next {
-    width: 50px; /* Make controls larger */
+    width: 50px; /* Size of the controls */
     height: 50px;
-    background-color: green; /* Adjust color as needed */
-    border-radius: 50%;
-    line-height: 50px;
-    text-align: center;
-    color: white;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%); /* Vertically centers the controls */
+    background-color: #758e7f; /* Background color of the controls */
+    border-radius: 50%; /* Rounded corners for the controls */
+    opacity: 0.8; /* Opacity of the controls */
+    z-index: 5; /* Ensures controls are above carousel content */
 }
 
+/* Previous control */
+.carousel-control-prev {
+    left: -20%;
+}
+
+/* Next control */
+.carousel-control-next {
+    right: -20%;
+}
+
+/* Icons within controls */
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
-    width: 24px; /* Adjust icon size as needed */
+    background-color: green; /* Background color for icons (optional) */
+    border-radius: 50%;
+    width: 24px; /* Size of the icons */
     height: 24px;
 }
 
+/* Font size and color for icons */
 .carousel-control-prev-icon::before,
 .carousel-control-next-icon::before {
-    font-size: 24px; /* Adjust icon size as needed */
+    font-size: 24px; /* Size of the icon font */
+    color: #fff; /* Color of the icons */
 }
+
+/* Remove default background color from Bootstrap icons */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: transparent; /* Removes default background color */
+}
+
 
 .Typewriter__cursor {
     display: none;
@@ -354,6 +382,10 @@ footer .social-links a:hover{
         justify-content: center;
         padding: 0;}
 
+    .carousel-item video {
+        height: auto;
+    }
+
     .content img , .content video{
     max-width: 100%; /* Ensure images don't overflow their containers */
     height: auto; /* Maintain aspect ratio */
@@ -381,5 +413,6 @@ footer .social-links a:hover{
     .projects h3{
         font-size: auto;
     }
+
   }
   
