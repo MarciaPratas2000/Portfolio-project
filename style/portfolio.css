@@ -146,11 +146,6 @@ color:var(--branding-color);
     color: var(--branding-color);
 }
 
-.container img , .container video{
-    border: 3px solid var(--secondary-color);
-    border-radius: 6px;
-    padding: 10px;
-}
 
 .container h2 {
     font-family: var(--heading-font-family);
@@ -179,7 +174,12 @@ color:var(--branding-color);
     font-family: var(--default-font-family);
 }
 
-
+.carousel-container{
+    height:90vh;
+    width: 90vh;
+    justify-content: center;
+    align-items: center;
+}
 
 .about-image-container {
     width: 40%;
@@ -313,7 +313,23 @@ footer .social-links a:hover{
 .cursor-visible .Typewriter__cursor {
     display: inline-block;
   }
-
+  .project-container {
+    padding: 20px;
+    margin-bottom: 40px;
+    max-height: 95vh;
+    background-color: #f8f9fa; /* Light background for contrast */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  }
+  
+  .project-container img,
+  .project-container video {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 10px;
+    object-fit: cover; /* Ensures images are cropped consistently */
+  }
+  
 
   @media(max-width: 800px) {
     .hero {
@@ -364,6 +380,7 @@ footer .social-links a:hover{
         font-weight: 400;
     }
     
+
     .btn-branding-outline {
         margin: 0px 5px 30px 5px;
         padding: 10px 20px;
@@ -386,12 +403,7 @@ footer .social-links a:hover{
         height: auto;
     }
 
-    .content img , .content video{
-    max-width: 100%; /* Ensure images don't overflow their containers */
-    height: auto; /* Maintain aspect ratio */
-    display: block; /* Ensure proper rendering in all browsers */
-    }
-    
+
     footer .social-links a {
         margin: 0 20px;
         padding: 5px 10px;
@@ -399,7 +411,7 @@ footer .social-links a:hover{
         font-size: 10px;
     }
     
-  
+
   }
   /* For iPad models in portrait mode */
 @media(min-width: 768px){
