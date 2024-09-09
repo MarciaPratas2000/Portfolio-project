@@ -1,3 +1,4 @@
+/* Root Variables */
 :root {
     --branding-color: #487058;
     --default-font-family: "Poppins", sans-serif;
@@ -5,6 +6,7 @@
     --secondary-color: #f9f7fe;
 }
 
+/* Global Styles */
 body {
     font-family: var(--default-font-family);
     transition: all 1s ease;
@@ -66,18 +68,19 @@ body {
     position: relative;
     z-index: 1;
 }
+
 .left-page img {
     max-height: 450px;
 }
+
 .right-page {
     padding: 75px 10px;
 }
 
-.branding-color   {
-    color:var(--branding-color);
-       }
+.branding-color {
+    color: var(--branding-color);
+}
 
-       
 .btn-cv {
     align-self: flex-start;
     border: 1px solid var(--branding-color);
@@ -107,7 +110,6 @@ body {
     border: 5px solid var(--branding-color);
     color: var(--secondary-color);
     padding: 10px 15px;
-
 }
 
 .btn-text {
@@ -117,18 +119,18 @@ body {
 }
 
 .btn-branding {
-background: var(--branding-color);
-border-radius: 4px;
-color: white;
-font-size: 18px;
-line-height: 27px;
-padding: 15px 30px;
+    background: var(--branding-color);
+    border-radius: 4px;
+    color: white;
+    font-size: 18px;
+    line-height: 27px;
+    padding: 15px 30px;
 }
 
-.btn-branding:hover{
-border: 1px solid var(--branding-color);
-background: var(--secondary-color) ;
-color:var(--branding-color);
+.btn-branding:hover {
+    border: 1px solid var(--branding-color);
+    background: var(--secondary-color);
+    color: var(--branding-color);
 }
 
 .btn-branding-outline {
@@ -138,7 +140,6 @@ color:var(--branding-color);
     font-size: 18px;
     line-height: 27px;
     padding: 15px 30px;
-
 }
 
 .btn-branding-outline:hover {
@@ -146,36 +147,40 @@ color:var(--branding-color);
     color: var(--branding-color);
 }
 
-
 .container h2 {
     font-family: var(--heading-font-family);
     font-size: 40px;
     font-weight: bold;
 }
 
-.container-section  img , .container-section  video{
+.container-section img,
+.container-section video {
     padding: 8px;
     width: 500px;
-
 }
+
 .container-section {
     padding: 60px 20px;
 }
+
 .content {
     margin: 30px;
 }
-.container-section h1 , .self-skills h1{
+
+.container-section h1,
+.self-skills h1 {
     font-size: 60px;
     line-height: 80px;
     font-family: var(--heading-font-family);
 }
+
 .container-section h2 {
     font-size: 18px;
     font-family: var(--default-font-family);
 }
 
-.carousel-container{
-    height:90vh;
+.carousel-container {
+    height: 90vh;
     width: 90vh;
     justify-content: center;
     align-items: center;
@@ -183,38 +188,37 @@ color:var(--branding-color);
 
 .about-image-container {
     width: 40%;
-     height: auto;
-     margin: 0 auto;
-     display: block;
+    height: auto;
+    margin: 0 auto;
+    display: block;
     overflow: hidden; /* Ensure image stays within container */
     border-radius: 50%; /* Makes the container and image round */
     background-color: var(--secondary-color);
     opacity: 95%;
+}
 
-
-  }
-  
-  .about-image-container img {
+.about-image-container img {
     border: var(--secondary-color);
     z-index: 2; /* Make sure the circle is behind the image */
     border-radius: 50%; /* Makes the container and image round */
     width: 100%; /* Ensure the image fills the container */
     height: 100%; /* Ensure the image fills the container */
     object-fit: cover; /* Maintain aspect ratio and fill the container */
-  }
-  .skills-background{
+}
+
+.skills-background {
     background-color: var(--secondary-color);
     padding: auto;
 }
 
- .self-skills {
-   font-family: var(--default-font-family);
+.self-skills {
+    font-family: var(--default-font-family);
     color: #487058;
     margin: 8px auto;
 }
 
 .each-skill {
-    color:var(--secondary-color);
+    color: var(--secondary-color);
     background-color: rgb(40, 40, 69);
     border-radius: 23.2px;
     line-height: 20px;
@@ -225,10 +229,11 @@ color:var(--branding-color);
     margin-bottom: 13px;
 }
 
-footer h1{
+footer h1 {
     font-family: var(--heading-font-family);
     font-weight: 600;
 }
+
 footer .contact-box {
     background: var(--secondary-color);
     padding: 30px 120px;
@@ -244,22 +249,23 @@ footer .social-links a {
     font-size: 18px;
 }
 
-footer .social-links a:hover{
+footer .social-links a:hover {
     color: var(--branding-color);
     background: var(--secondary-color);
     border: 1px solid var(--branding-color);
 }
 
-/* Carousel container */
+/* Carousel Container */
 .carousel {
     position: relative;
 }
-/* Carousel video */
+
+/* Carousel Video */
 .carousel-item video {
     height: 500px;
 }
 
-/* Carousel controls */
+/* Carousel Controls */
 .carousel-control-prev,
 .carousel-control-next {
     width: 50px; /* Size of the controls */
@@ -273,17 +279,17 @@ footer .social-links a:hover{
     z-index: 5; /* Ensures controls are above carousel content */
 }
 
-/* Previous control */
+/* Previous Control */
 .carousel-control-prev {
     left: -20%;
 }
 
-/* Next control */
+/* Next Control */
 .carousel-control-next {
     right: -20%;
 }
 
-/* Icons within controls */
+/* Icons within Controls */
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
     background-color: green; /* Background color for icons (optional) */
@@ -292,52 +298,49 @@ footer .social-links a:hover{
     height: 24px;
 }
 
-/* Font size and color for icons */
+/* Font Size and Color for Icons */
 .carousel-control-prev-icon::before,
 .carousel-control-next-icon::before {
     font-size: 24px; /* Size of the icon font */
     color: #fff; /* Color of the icons */
 }
 
-/* Remove default background color from Bootstrap icons */
+/* Remove Default Background Color from Bootstrap Icons */
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
     background-color: transparent; /* Removes default background color */
 }
-
-
-.Typewriter__cursor {
-    display: none;
-  }
-
-.cursor-visible .Typewriter__cursor {
-    display: inline-block;
-  }
-  .project-container {
+/* Project Container */
+.project-container {
     padding: 20px;
     margin-bottom: 40px;
     max-height: 95vh;
     background-color: #f8f9fa; /* Light background for contrast */
     border-radius: 10px; /* Rounded corners */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-  }
-  
-  .project-container img,
-  .project-container video {
+}
+
+.project-container img,
+.project-container video {
     max-width: 100%;
     max-height: 100%;
     border-radius: 10px;
     object-fit: cover; /* Ensures images are cropped consistently */
-  }
-  
+}
 
-  @media(max-width: 800px) {
+
+
+/* Media Queries */
+
+/* Smartphones */
+@media(max-width: 914px) {
     .hero {
         align-items: center;
         padding: 10px auto;
         text-align: center;
     }
-    .hero img , .about-image-container {
+    .hero img,
+    .about-image-container {
         display: block;
         margin: 0 auto;
         text-align: center;
@@ -358,16 +361,20 @@ footer .social-links a:hover{
         width: 100%;
         height: 100%;
     }
-    .right-page h1 , .container-section h1 , .skills-background h1{
+    .right-page h1,
+    .container-section h1,
+    .skills-background h1 {
         font-size: 2.5rem;
         line-height: normal;   
-     }
-    .right-page h2 , .container-section h2{
+    }
+    .right-page h2,
+    .container-section h2 {
         font-size: 1.1rem;
     }
     .right-page h1,
     .right-page h2,
-    .btn-cv , .btn-branding{
+    .btn-cv,
+    .btn-branding {
         margin: 20px auto auto auto;
         text-align: center;
     }
@@ -379,13 +386,10 @@ footer .social-links a:hover{
         line-height: 1;
         font-weight: 400;
     }
-    
-
     .btn-branding-outline {
         margin: 0px 5px 30px 5px;
         padding: 10px 20px;
     }
-  
     .img-sm {
         display: block;
         margin: 5px;
@@ -393,38 +397,82 @@ footer .social-links a:hover{
         text-align: center;
         width: 70%;
     }
-
-    .container-section, .about-image-container img , .skills-background  {
+    .container-section,
+    .about-image-container img,
+    .skills-background {
         text-align: center;
         justify-content: center;
-        padding: 0;}
-
-    .carousel-item video {
-        height: auto;
+        padding: 0;
     }
-
-
     footer .social-links a {
         margin: 0 20px;
         padding: 5px 10px;
         border-radius: 50%;
         font-size: 10px;
     }
+    .carousel-container {
+        height: 50vh;
+        width: 30vh;
+        font-size: smaller;
+    }
+    .carousel-container img,
+    .carousel-container video {
+        height: 50%;
+        width: 50%;
+        object-fit: cover;
+    }
+    .carousel-container .btn {
+        font-size: 0.8rem;
+        padding: 5px 10px;
+        margin: 2px 0;
+        max-width: 80%;
+        border-radius: 4px;
+    }
+    .carousel-container p {
+        font-size: xx-small;
+        margin: 0;
+    }
+    .carousel-container h3 {
+        font-size: 0.6rem;
+        margin: 2px 0;
+        line-height: 1.2;
+        text-align: center;
+        max-width: 80%;
+    }
+    .carousel-control-prev,
+    .carousel-control-next {
+        width: 30px;
+        height: 30px;
+        top: 45%; /* Lowering the controls slightly for better touch accessibility */
+    }
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+        width: 16px;
+        height: 16px;
+    }
+    .carousel-control-prev-icon::before,
+    .carousel-control-next-icon::before {
+        font-size: 14px; /* Reducing icon size for smartphone screens */
+    }
+}
     
 
-  }
-  /* For iPad models in portrait mode */
-@media(min-width: 768px){
-    .projects{
+/* iPads */
+@media (min-width: 768px) and (max-width: 1366px) {
+    .projects {
         height: fit-content;
-
     }
-    .projects img , .projects video {
+    .projects img,
+    .projects video {
         height: 70%;
     }
-    .projects h3{
+    .projects h3 {
         font-size: auto;
     }
-
-  }
-  
+    .carousel-container {
+        height: 60vh;
+        width: 50vh;
+        justify-content: center;
+        align-items: center;
+    }
+}
