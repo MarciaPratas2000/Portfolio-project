@@ -255,61 +255,60 @@ footer .social-links a:hover {
     border: 1px solid var(--branding-color);
 }
 
-/* Carousel Container */
-.carousel {
-    position: relative;
-}
-
-/* Carousel Video */
-.carousel-item video {
-    height: 500px;
-}
-
 /* Carousel Controls */
 .carousel-control-prev,
 .carousel-control-next {
-    width: 50px; /* Size of the controls */
-    height: 50px;
+    width: 0 !important; /* Set width to 0 */
+    height: 30px;
     position: absolute;
     top: 50%;
-    transform: translateY(-50%); /* Vertically centers the controls */
-    background-color: #758e7f; /* Background color of the controls */
-    border-radius: 50%; /* Rounded corners for the controls */
-    opacity: 0.8; /* Opacity of the controls */
-    z-index: 5; /* Ensures controls are above carousel content */
+    transform: translateY(-50%);
+    background-color: rgba(117, 142, 127, 0.8);
+    border-radius: 50%;
+    opacity: 1;
+    z-index: 5;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    border: none;
 }
 
 /* Previous Control */
 .carousel-control-prev {
-    left: -20%;
+    left: 5px;
 }
 
 /* Next Control */
 .carousel-control-next {
-    right: -20%;
+    right: 5px;
+}
+
+/* Circular button within controls */
+.carousel-control-prev::after,
+.carousel-control-next::after {
+    content: '';
+    width: 30px;
+    height: 30px;
+    background-color: rgba(117, 142, 127, 0.8);
+    border-radius: 50%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
 }
 
 /* Icons within Controls */
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
-    background-color: green; /* Background color for icons (optional) */
-    border-radius: 50%;
-    width: 24px; /* Size of the icons */
-    height: 24px;
+    width: 15px;
+    height: 15px;
+    background-size: 100% 100%;
+    position: relative;
+    z-index: 1;
 }
 
-/* Font Size and Color for Icons */
-.carousel-control-prev-icon::before,
-.carousel-control-next-icon::before {
-    font-size: 24px; /* Size of the icon font */
-    color: #fff; /* Color of the icons */
-}
-
-/* Remove Default Background Color from Bootstrap Icons */
-.carousel-control-prev-icon,
-.carousel-control-next-icon {
-    background-color: transparent; /* Removes default background color */
-}
 /* Project Container */
 .project-container {
     padding: 20px;
@@ -327,8 +326,6 @@ footer .social-links a:hover {
     border-radius: 10px;
     object-fit: cover; /* Ensures images are cropped consistently */
 }
-
-
 
 /* Media Queries */
 
@@ -441,14 +438,13 @@ footer .social-links a:hover {
     }
     .carousel-control-prev,
     .carousel-control-next {
-        width: 30px;
-        height: 30px;
-        top: 45%; /* Lowering the controls slightly for better touch accessibility */
+        width: 25px; /* Even smaller for mobile */
+        height: 25px;
     }
     .carousel-control-prev-icon,
     .carousel-control-next-icon {
-        width: 16px;
-        height: 16px;
+        width: 12px; /* Smaller icons for mobile */
+        height: 12px;
     }
     .carousel-control-prev-icon::before,
     .carousel-control-next-icon::before {
